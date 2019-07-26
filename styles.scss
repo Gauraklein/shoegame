@@ -1,0 +1,174 @@
+//global
+
+@import url('https://fonts.googleapis.com/css?family=Fascinate|Work+Sans&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    background: #F9AC3D;
+}
+
+#container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+
+    // * {
+    //     border: 4px solid black;
+    // }
+}
+
+h1 {
+    font-family: 'Fascinate', cursive;
+    font-size: 2em;
+}
+
+h4 {
+    font-family: 'Fascinate', cursive;
+
+}
+
+
+
+ul {
+    list-style: none;
+    font-weight: 700;
+
+
+}
+//classes
+
+
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex2 {
+    flex: 2;
+}
+
+.flex3 {
+    flex: 3
+}
+
+.flex4 {
+    flex: 4;
+}
+
+.flex9 {
+    flex: 9;
+}
+
+.flex8 {
+    flex: 8;
+}
+
+//page
+
+nav {
+    align-items: baseline;
+    background: #F9AC3D;
+    justify-content: space-between;
+    li {
+        display: inline-block;
+        padding: 10px;
+        
+        font-size: 1.5em;
+    }
+
+}
+
+#shopping-bag {
+    margin-bottom: -3px;
+    margin-right: 5px;
+    width: 28px;
+    margin-left: -2px;
+}
+
+#left-side-nav {
+    margin: 0;
+    padding: 5px;
+    h1 {
+        margin-top: 0px;
+        text-align: center;
+    }
+    p {
+        
+        margin-top: -25px;
+        margin-bottom: 0px;
+    }
+}
+
+#sidebar {
+    background: #F9AC3D;
+
+    li {
+        font-family: 'Fascinate', cursive;
+        font-size: 1.5em;
+        font-weight: 500;
+        padding: 10px;
+        
+    }
+
+    ul {
+        margin-left: -25px;
+        margin-top: 50px;
+    }
+}
+
+#product-parent {
+    background: #D0B285;
+    border: 3px solid #F9AC3D;
+    border-radius: 25px;
+    height: 80vh;
+    overflow: auto;
+}
+
+#products {
+   
+justify-content: center;
+    
+}
+
+.shoe-tile {
+    margin: 25px;
+    padding: 5px;
+    text-align: center;
+    max-width: 200px;
+  
+}
+
+.shoe-img {
+    max-width: 200px;
+    
+}
+
+#ads {
+    text-align: center;
+}
+
+footer {
+    background: #F9AC3D;
+    text-align: center;
+}
+
+#test {
+    background: white;
+}
