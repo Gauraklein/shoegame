@@ -88,3 +88,30 @@ let shoes = [
         "price": "$70.00"
     }
 ]
+
+let productContainer = document.getElementById("product-container");
+
+function allProductsLoad () {
+
+    return shoes.map(shoe => {
+
+        return `
+            <div class="flex1 shoe-tile flex-column ${shoe.class} ${shoe.color}">
+                <img class="shoe-img" src="${shoe.img}" alt="${shoe.name}">
+                <h4>${shoe.name}</h4>
+                <p>${shoe.description}</p>
+                <p><strong>${shoe.price}</strong></p>
+
+            </div>
+        `
+
+    }).join("");
+
+}
+
+productContainer.innerHTML = allProductsLoad();
+{/* <div class="flex1 shoe-tile flex-column">
+                            <img class="shoe-img" src="img/chuck-white-hi.png" alt="white chuck taylor">
+                            <h4>Converse Chuck Taylor Hi</h4>
+                            <p>A classic originally built for the court.</p>
+                    </div> */}
