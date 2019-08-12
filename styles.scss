@@ -181,3 +181,11 @@ footer {
 #test {
     background: white;
 }
+
+.clickable {
+    cursor: pointer;
+}
+
+.clickable:hover {
+    color: rgb(152, 89, 20);
+}
