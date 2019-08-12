@@ -1,43 +1,3 @@
-//global
-
-@import url('https://fonts.googleapis.com/css?family=Fascinate|Work+Sans&display=swap');
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Work Sans', sans-serif;
-    background: #F9AC3D;
-}
-
-#container {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-
-    // * {
-    //     border: 4px solid black;
-    // }
-}
-
-h1 {
-    font-family: 'Fascinate', cursive;
-    font-size: 2em;
-}
-
-h4 {
-    font-family: 'Fascinate', cursive;
-
-}
-
-
-
-ul {
-    list-style: none;
-    font-weight: 700;
-
-
-}
 //classes
 
 
@@ -79,6 +39,51 @@ ul {
 .flex8 {
     flex: 8;
 }
+
+
+
+//global
+
+@import url('https://fonts.googleapis.com/css?family=Fascinate|Work+Sans&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    background: #F9AC3D;
+    
+}
+
+#container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height:90vh;
+
+    // * {
+    //     border: 4px solid black;
+    // }
+}
+
+h1 {
+    font-family: 'Fascinate', cursive;
+    font-size: 2em;
+}
+
+h4 {
+    font-family: 'Fascinate', cursive;
+
+}
+
+
+
+ul {
+    list-style: none;
+    font-weight: 700;
+
+
+}
+
 
 //page
 
@@ -141,9 +146,10 @@ nav {
     overflow: auto;
 }
 
-#products {
+#product-container {
    
 justify-content: center;
+
     
 }
 
@@ -156,12 +162,15 @@ justify-content: center;
 }
 
 .shoe-img {
-    max-width: 200px;
+    max-height: 120px;
+    width: auto;
+    
     
 }
 
 #ads {
     text-align: center;
+    // overflow: hidden;
 }
 
 footer {
@@ -171,4 +180,12 @@ footer {
 
 #test {
     background: white;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.clickable:hover {
+    color: rgb(152, 89, 20);
 }
