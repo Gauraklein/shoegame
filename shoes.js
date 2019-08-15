@@ -154,6 +154,8 @@ function onlyJordan () {
     
     productContainer.empty();
     productContainer.html(brandRender('jordan'))
+    $('.add-to-bag-button').click(addToBag)
+
 
 }
 
@@ -162,6 +164,8 @@ function onlyNike () {
     
     productContainer.empty();
     productContainer.html(brandRender('nike'))
+    $('.add-to-bag-button').click(addToBag)
+
     
 }
 
@@ -170,6 +174,8 @@ function onlyConverse () {
     
     productContainer.empty();
     productContainer.html(brandRender('converse'))
+    $('.add-to-bag-button').click(addToBag)
+
     
 }
 
@@ -178,6 +184,8 @@ function onlyReebok () {
     
     productContainer.empty();
     productContainer.html(brandRender('reebok'))
+    $('.add-to-bag-button').click(addToBag)
+
     
 }
 
@@ -185,6 +193,8 @@ function onlyAdidas () {
     
     productContainer.empty();
     productContainer.html(brandRender('adidas'))
+    $('.add-to-bag-button').click(addToBag)
+
     
 }
 
@@ -192,6 +202,8 @@ function onlyPfFlyer () {
     
     productContainer.empty();
     productContainer.html(brandRender('pf-flyer'))
+    $('.add-to-bag-button').click(addToBag)
+
     
 }
 
@@ -245,6 +257,7 @@ function brandRender (brand) {
 function homeRender () {
     productContainer.empty();
     productContainer.html(allProductsRender)
+    $('.add-to-bag-button').click(addToBag)
 }
 
 //Renders all products on sale
@@ -252,6 +265,8 @@ function homeRender () {
 function saleRender () {
     productContainer.empty;
     productContainer.html(saleConditional)
+    $('.add-to-bag-button').click(addToBag)
+
 }
 
 function saleConditional () {
@@ -279,6 +294,10 @@ function saleConditional () {
 function newArrivalRender () {
     productContainer.empty()
     productContainer.html(newArrivalConditional)
+    $('.add-to-bag-button').click(addToBag)
+
+
+
 }
 
 function newArrivalConditional (array) {
@@ -333,7 +352,7 @@ addToBagButton.click(addToBag)
 
 //goes through shoes array and finds proper product then renders in bag
 function addToBag (shoeToAdd) {
-    console.log('button is working')
+    
     shoes.map(shoe => {
 
         if (shoe.productID === shoeToAdd.target.id) {
@@ -379,4 +398,3 @@ function updateBagTotal () {
     )
 
 }
-
